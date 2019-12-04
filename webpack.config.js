@@ -17,9 +17,17 @@ module.exports = {
     __dirname: false, // if you don't put this is, __dirname
     __filename: false // and __filename return blank or /
   },
+  resolve: {
+    extensions: ['.js', '.graphql', '.gql'],
+  },
   externals: [nodeExternals()], // Need this to avoid error when working with Express
   module: {
     rules: [
+      {
+        test: /\.(graphql|gql)$/,
+        exclude: /node_modules/,
+        loader: 'graphql-tag/loader',
+      },
       {
         test: /\.js?$/,
         use: [

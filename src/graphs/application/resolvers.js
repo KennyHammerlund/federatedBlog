@@ -1,8 +1,8 @@
 export default {
   Query: {
-    application: async (obj, { input }, ctx) => {
+    blogApplication: async (obj, { input }, ctx) => {
       return {
-        online: true
+        blogOnline: true
       };
     }
   }

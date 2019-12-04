@@ -8,9 +8,9 @@ module.exports = merge(config, {
   watch: true,
   plugins: [
     new NodemonPlugin({
+      nodeArgs: ["--inspect=9224"],
       verbose: false,
-      ignore: ["*.js.map"],
-      nodeArgs: ["--inspect"]
+      ignore: ["*.js.map"]
     })
   ]
 });

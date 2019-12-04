@@ -1,7 +1,10 @@
+scalar Date
+scalar DateTime
+
 type Query {
-  application: Application
+  blogApplication: BlogApplication
 }
 
-type Application {
-  online: Boolean
+type BlogApplication {
+  blogOnline: Boolean
 }

@@ -1,8 +1,0 @@
-scalar Date
-scalar DateTime
-
-# import Query.* from 'application/schema.graphql'
-# import Query.* from 'viewer/schema.graphql'
-
-# import Mutation.* from 'game/schema.graphql'
-# import Mutation.* from 'viewer/schema.graphql'
